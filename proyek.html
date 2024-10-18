@@ -23,17 +23,64 @@
             height: auto;
             border-radius: 5px;
         }
+        .unique-navbar {
+            background-color: #673ab7; /* Deep purple background */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .unique-navbar .nav-link {
+            color: white; /* White text color */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        .unique-navbar .nav-link:hover {
+            color: #ffeb3b; /* Bright yellow on hover */
+        }
+
+        .unique-navbar .navbar-brand {
+            font-size: 1.5rem; /* Larger brand text */
+            font-weight: bold; /* Bold brand text */
+            color: #ffeb3b; /* Bright yellow for brand */
+        }
+
+        .unique-navbar .navbar-toggler {
+            border-color: white; /* White border for toggler */
+        }
+
+        .unique-navbar .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom toggler icon */
+        }
+        .okarun{
+            color: #ffeb3b;
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="Home.html">Home</a>
+    <nav class="navbar navbar-expand-lg unique-navbar">
+        <a class="navbar-brand" href="#">Portofolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pageaboutme.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proyek.html">Proyek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Pageaboutme.html">Contact</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
 <header class="portfolio-header">
-    <h1>Portofolio Wildan</h1>
+    <h1 class="okarun">Portofolio Wildan</h1>
     <p>Berikut adalah proyek yang telah saya kerjakan.</p>
 </header>
 
@@ -44,7 +91,7 @@
                 <img src="Landing page.jpg" class="card-img-top" alt="Proyek 1">
                 <div class="card-body">
                     <h5 class="card-title">Proyek Tim</h5>
-                    <p class="card-text">Proyek ini dijalankan Saya bersama tim yang ber anggotakan 6 orang. Proyek ini membuat design web bertema Health center. menggunakan platform FIGMA</p>
+                    <p class="card-text">Proyek ini membuat High-Fidelity Prototype untuk design website bertema Health (gaya hidup sehat). Made with FIGMA</p>
                     <a href="https://www.figma.com/design/UcJYoGYtWCyH0rUV5vzM1g/Micro-challange?node-id=116-2688&t=0WEif3joMbD84YZH-1" class="btn btn-primary">Lihat Selengkapnya</a>
                 </div>
             </div>
